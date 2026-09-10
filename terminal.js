@@ -11,9 +11,10 @@ const PAGES = {
   qualifications: "qualifications.html",
   quals: "qualifications.html",
   activities: "activities.html",
+  sandbox: "sandbox.html"
 };
 
-const HELP_TEXT = "commands: home, portfolio, qualifications, activities, help, clear";
+const HELP_TEXT = "commands: home, portfolio, qualifications, activities, sandbox, help, clear";
 
 function initTerminal() {
   const input = document.getElementById("terminalInput");
