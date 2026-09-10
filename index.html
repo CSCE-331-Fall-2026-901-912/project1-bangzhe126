@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Andrew Feng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+    <img class="profile-photo" src="profile.jpg" alt="Andrew Feng">
+
     <h1>Andrew Feng</h1>
-    <h2>Software Engineer, Cybersecurity Practicioner, and SAT Tutor</h2>
-    <a href="index.html">Home</a> <a href="qualifications.html">Qualifications</a> <a href="portfolio.html">Portfolio</a>
-    <a href="activities.html">Activities</a> <a href="sandbox.html">Sandbox</a>
+    <h2>Software Engineer, Cybersecurity Practitioner, and SAT Tutor</h2>
+
+    <section>
+        <h3>about</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+
+    <section>
+        <h3>$ background</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <div id="terminalBar">
+        <div id="terminalOutput"></div>
+        <div class="terminal-prompt-row">
+            <span class="terminal-prompt">andrew@site:~$</span>
+            <input type="text" id="terminalInput" autocomplete="off" placeholder="type a page name... (help)">
+        </div>
+    </div>
+
+    <script src="terminal.js"></script>
 </body>
 </html>

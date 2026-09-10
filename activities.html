@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="activities.css">
 </head>
 <body>
-    <h1>Activities</h1>
-    <a href="index.html">Home</a> <a href="qualifications.html">Qualifications</a> <a href="portfolio.html">Portfolio</a>
-    <a href="activities.html">Activities</a> <a href="sandbox.html">Sandbox</a>
+
+    <h1 class="page-title">$ ACTIVITIES</h1>
+    <p class="page-blurb">Lorem ipsum dolor sit amet -- a short blurb about extracurriculars and involvement.</p>
+
+    <div class="activities-list">
+        <div class="activity-item">
+            <div class="activity-title">(Activity One)</div>
+            <div class="activity-desc">I haven't actually decided what to put here</div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-title">(Activity Two)</div>
+            <div class="activity-desc">Neither here</div>
+        </div>
+        <div class="activity-item">
+            <div class="activity-title">(Activity Three)</div>
+            <div class="activity-desc">nor here</div>
+        </div>
+    </div>
+
+    <div id="terminalBar">
+        <div id="terminalOutput"></div>
+        <div class="terminal-prompt-row">
+            <span class="terminal-prompt">andrew@site:~$</span>
+            <input type="text" id="terminalInput" autocomplete="off" placeholder="type a page name... (help)">
+        </div>
+    </div>
+
+    <script src="terminal.js"></script>
 </body>
 </html>
