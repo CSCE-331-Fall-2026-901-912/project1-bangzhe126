@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
-    <a href="index.html">Home</a> <a href="qualifications.html">Qualifications</a> <a href="portfolio.html">Portfolio</a>
-    <a href="activities.html">Activities</a> <a href="sandbox.html">Sandbox</a>
-    
+
+    <h1 class="page-title">$ PORTFOLIO</h1>
+    <p class="page-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit -- a short blurb about the kind of work shown below.</p>
+
+    <div class="portfolio-grid">
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="portfolio-1.jpg" alt="Project One">
+            <div class="portfolio-title">Project One</div>
+            <div class="portfolio-caption">Lorem ipsum dolor sit amet consectetur.</div>
+        </a>
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="portfolio-2.jpg" alt="Project Two">
+            <div class="portfolio-title">Project Two</div>
+            <div class="portfolio-caption">Lorem ipsum dolor sit amet consectetur.</div>
+        </a>
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="portfolio-3.jpg" alt="Project Three">
+            <div class="portfolio-title">Project Three</div>
+            <div class="portfolio-caption">Lorem ipsum dolor sit amet consectetur.</div>
+        </a>
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="portfolio-4.jpg" alt="Project Four">
+            <div class="portfolio-title">Project Four</div>
+            <div class="portfolio-caption">Lorem ipsum dolor sit amet consectetur.</div>
+        </a>
+    </div>
+
+    <div id="terminalBar">
+        <div id="terminalOutput"></div>
+        <div class="terminal-prompt-row">
+            <span class="terminal-prompt">andrew@site:~$</span>
+            <input type="text" id="terminalInput" autocomplete="off" placeholder="type a page name... (help)">
+        </div>
+    </div>
+
+    <script src="terminal.js"></script>
 </body>
 </html>
