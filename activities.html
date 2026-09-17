@@ -8,58 +8,103 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <link id="themeStylesheet" rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body class="activities-page">
 
-    <header class="site-hero">
-        <img class="hero-image" src="profile.jpg" alt="Andrew Feng">
-        <div class="hero-overlay">
-            <p class="hero-site-name">Andrew Feng</p>
-            <h1 class="hero-title page-title">ACTIVITIES</h1>
-            <p class="hero-subtitle page-blurb">Lorem ipsum dolor sit amet — a short blurb about extracurriculars and involvement.</p>
-        </div>
-    </header>
+<header class="site-hero">
+    <div class="hero-overlay">
+        <p class="hero-site-name">Andrew Feng</p>
+        <h1 class="hero-title page-title">ACTIVITIES</h1>
+        <p class="hero-subtitle page-blurb">
+            Interests, organizations, hobbies, and other things I spend my time doing.
+        </p>
+    </div>
+</header>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-        <div class="site-nav-inner">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="qualifications.html">Qualifications</a>
-            <a href="activities.html">Activities</a>
-            <a href="sandbox.html">Sandbox</a>
-            <span class="nav-spacer"></span>
-            <a href="#" data-theme-toggle>Terminal Style</a>
-        </div>
-    </nav>
+<nav class="site-nav" aria-label="Primary navigation">
+    <div class="site-nav-inner">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="activities.html">Activities</a>
+        <a href="sandbox.html">Sandbox</a>
+        <span class="nav-spacer"></span>
+        <a href="#" data-theme-toggle>Terminal Style</a>
+    </div>
+</nav>
 
-    <main class="page-content">
-        <div class="activities-list">
-            <div class="activity-item">
-                <div class="activity-title">(Activity One)</div>
-                <div class="activity-desc">I haven't actually decided what to put here</div>
+<main class="page-content">
+
+    <div class="activities-list">
+
+        <div class="activity-item">
+            <div class="activity-title">(Activity One)</div>
+
+            <div class="activity-desc">
+                I haven't actually decided what to put here.
             </div>
-            <div class="activity-item">
-                <div class="activity-title">(Activity Two)</div>
-                <div class="activity-desc">Neither here</div>
-            </div>
-            <div class="activity-item">
-                <div class="activity-title">(Activity Three)</div>
-                <div class="activity-desc">nor here</div>
-            </div>
+
+            <img
+                class="activity-photo professional-only"
+                src="media/activity-1.jpg"
+                alt="Activity one"
+            >
         </div>
 
-        <div class="main-text">
-            <p>note to future self: i like music, cooking, working out, basketball, playing games, coding(?????), volunteering</p>
-        </div>
-    </main>
+        <div class="activity-item">
+            <div class="activity-title">(Activity Two)</div>
 
-    <div id="terminalBar">
-        <div id="terminalOutput"></div>
-        <div class="terminal-prompt-row">
-            <span class="terminal-prompt">andrew@site:~$</span>
-            <input type="text" id="terminalInput" autocomplete="off" placeholder="type a page name... (help)">
+            <div class="activity-desc">
+                Neither here.
+            </div>
+
+            <img
+                class="activity-photo professional-only"
+                src="media/activity-2.jpg"
+                alt="Activity two"
+            >
         </div>
+
+        <div class="activity-item">
+            <div class="activity-title">(Activity Three)</div>
+
+            <div class="activity-desc">
+                nor here
+            </div>
+
+            <img
+                class="activity-photo professional-only"
+                src="media/activity-3.jpg"
+                alt="Activity three"
+            >
+        </div>
+
     </div>
 
-    <script src="site.js"></script>
+    <div class="main-text">
+        <p>
+            note to future self: i like music, cooking, working out, basketball,
+            playing games, coding(?????), volunteering
+        </p>
+    </div>
+
+</main>
+
+<div id="terminalBar">
+    <div id="terminalOutput"></div>
+
+    <div class="terminal-prompt-row">
+        <span class="terminal-prompt">andrew@site:~$</span>
+        <input
+            type="text"
+            id="terminalInput"
+            autocomplete="off"
+            placeholder="type a page name... (help)"
+        >
+    </div>
+</div>
+
+<script src="site.js"></script>
+
 </body>
 </html>

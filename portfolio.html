@@ -8,62 +8,89 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <link id="themeStylesheet" rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body class="portfolio-page">
 
-    <header class="site-hero">
-        <img class="hero-image" src="portfolio-1.jpg" alt="Featured project">
-        <div class="hero-overlay">
-            <p class="hero-site-name">Andrew Feng</p>
-            <h1 class="hero-title page-title">PORTFOLIO</h1>
-            <p class="hero-subtitle page-blurb">I have worked on multiple projects throughout my educational career—some solo, some in a group; some during hackathons, some just for fun; some for myself, some for clients—but these are the ones I’m most proud of.</p>
-        </div>
-    </header>
+<header class="site-hero">
+    <div class="hero-overlay">
+        <p class="hero-site-name">Andrew Feng</p>
+        <h1 class="hero-title page-title">PORTFOLIO</h1>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-        <div class="site-nav-inner">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="qualifications.html">Qualifications</a>
-            <a href="activities.html">Activities</a>
-            <a href="sandbox.html">Sandbox</a>
-            <span class="nav-spacer"></span>
-            <a href="#" data-theme-toggle>Terminal Style</a>
-        </div>
-    </nav>
+        <p class="hero-subtitle page-blurb">
+            I have worked on multiple projects throughout my educational career—some solo,
+            some in a group; some during hackathons, some just for fun; some for myself,
+            some for clients—but these are the ones I’m most proud of.
+        </p>
+    </div>
+</header>
 
-    <main class="page-content">
-        <div class="portfolio-grid">
-            <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
-                <img src="portfolio-1.jpg" alt="Muses project">
-                <div class="portfolio-title">Muses</div>
-                <div class="portfolio-caption"></div>
-            </a>
-            <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
-                <img src="portfolio-2.jpg" alt="StockInfo project">
-                <div class="portfolio-title">StockInfo</div>
-                <div class="portfolio-caption"></div>
-            </a>
-            <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
-                <img src="portfolio-3.jpg" alt="EsportsGM project">
-                <div class="portfolio-title">EsportsGM</div>
-                <div class="portfolio-caption"></div>
-            </a>
-            <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
-                <img src="portfolio-4.jpg" alt="ShippingServiceAgentCN project">
-                <div class="portfolio-title">ShippingServiceAgentCN</div>
-                <div class="portfolio-caption">Name TBA</div>
-            </a>
-        </div>
-    </main>
+<nav class="site-nav" aria-label="Primary navigation">
+    <div class="site-nav-inner">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="activities.html">Activities</a>
+        <a href="sandbox.html">Sandbox</a>
+        <span class="nav-spacer"></span>
+        <a href="#" data-theme-toggle>Terminal Style</a>
+    </div>
+</nav>
 
-    <div id="terminalBar">
-        <div id="terminalOutput"></div>
-        <div class="terminal-prompt-row">
-            <span class="terminal-prompt">andrew@site:~$</span>
-            <input type="text" id="terminalInput" autocomplete="off" placeholder="type a page name... (help)">
-        </div>
+<main class="page-content">
+
+    <div class="portfolio-grid">
+
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="media/portfolio-1.jpg" alt="Muses project">
+            <div class="portfolio-title">Muses</div>
+            <div class="portfolio-caption">
+                Add a short description of Muses here.
+            </div>
+        </a>
+
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="media/portfolio-2.jpg" alt="StockInfo project">
+            <div class="portfolio-title">StockInfo</div>
+            <div class="portfolio-caption">
+                Add a short description of StockInfo here.
+            </div>
+        </a>
+
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="media/portfolio-3.jpg" alt="EsportsGM project">
+            <div class="portfolio-title">EsportsGM</div>
+            <div class="portfolio-caption">
+                Add a short description of EsportsGM here.
+            </div>
+        </a>
+
+        <a class="portfolio-item" href="https://github.com/abzf0" target="_blank" rel="noopener">
+            <img src="media/portfolio-4.jpg" alt="ShippingServiceAgentCN project">
+            <div class="portfolio-title">ShippingServiceAgentCN</div>
+            <div class="portfolio-caption">
+                Name TBA
+            </div>
+        </a>
+
     </div>
 
-    <script src="site.js"></script>
+</main>
+
+<div id="terminalBar">
+    <div id="terminalOutput"></div>
+
+    <div class="terminal-prompt-row">
+        <span class="terminal-prompt">andrew@site:~$</span>
+        <input
+            type="text"
+            id="terminalInput"
+            autocomplete="off"
+            placeholder="type a page name... (help)"
+        >
+    </div>
+</div>
+
+<script src="site.js"></script>
+
 </body>
 </html>

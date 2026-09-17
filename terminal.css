@@ -11,20 +11,52 @@ body {
     padding: 48px 24px 110px;
     background: #0a1420;
     color: #ffffff;
-    font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+    font-family: "JetBrains Mono", ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
 }
 
 .site-nav {
+    margin: 0 0 40px;
+}
+
+.site-nav-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    max-width: 700px;
+}
+
+.site-nav a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    color: #ffffff;
+}
+
+.nav-spacer {
     display: none;
+}
+
+[data-theme-toggle] {
+    margin-left: 2px;
+    padding-left: 22px;
+    border-left: 1px solid #1c2e44;
+    color: #ffffff !important;
+    white-space: nowrap;
 }
 
 .page-content {
     max-width: 100%;
+    margin: 0;
 }
 
 .site-hero {
     position: static;
-    margin: 0;
+    margin: 0 0 24px;
 }
 
 .hero-overlay {
@@ -33,20 +65,6 @@ body {
 
 .hero-site-name {
     display: none;
-}
-
-.site-hero .hero-image {
-    display: none;
-}
-
-.home-page .site-hero .hero-image {
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin: 0 0 24px;
-    border: 1px solid #1c2e44;
-    background: #0f1d30;
-    object-fit: cover;
 }
 
 .hero-title {
@@ -62,7 +80,7 @@ body {
 
 .home-title::before,
 .page-title::before,
-section h3::before {
+.split-text h3::before {
     content: "$ ";
 }
 
@@ -71,7 +89,7 @@ section h3::before {
 }
 
 .home-page .hero-subtitle {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     color: rgba(255, 255, 255, 0.56);
     font-size: 14px;
     font-weight: 400;
@@ -90,6 +108,43 @@ body:not(.home-page) .hero-subtitle {
     color: rgba(255, 255, 255, 0.56);
     font-size: 13px;
     line-height: 1.6;
+}
+
+.professional-only {
+    display: none;
+}
+
+.content-split,
+.content-split.reverse {
+    display: block;
+    max-width: 640px;
+    margin: 0 0 36px;
+}
+
+.split-text {
+    max-width: 640px;
+}
+
+.split-text h2 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.split-text h3 {
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.split-text p {
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13.5px;
+    line-height: 1.7;
 }
 
 a {
@@ -113,25 +168,6 @@ a:hover {
 
 .main-text ul {
     padding-left: 22px;
-}
-
-section {
-    max-width: 640px;
-    margin-bottom: 32px;
-}
-
-section h3 {
-    margin: 0 0 8px;
-    color: rgba(255, 255, 255, 0.34);
-    font-size: 13px;
-    font-weight: 600;
-}
-
-section p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 13.5px;
-    line-height: 1.7;
 }
 
 .portfolio-grid {
@@ -198,20 +234,22 @@ section p {
 }
 
 .quals-list {
-    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    max-width: 640px;
+    margin: 24px 0 32px;
 }
 
 .quals-list a {
-    display: block;
-    margin-bottom: 20px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .quals-list a:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 #main-body {
@@ -280,7 +318,20 @@ section p {
         padding: 32px 18px 100px;
     }
 
+    .site-nav-inner {
+        gap: 14px;
+    }
+
+    [data-theme-toggle] {
+        margin-left: 0;
+        padding-left: 14px;
+    }
+
     .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+
+    .quals-list {
+        gap: 16px;
     }
 }
