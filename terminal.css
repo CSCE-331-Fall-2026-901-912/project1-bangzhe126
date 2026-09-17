@@ -263,6 +263,139 @@ a:hover {
     font-size: 18px;
 }
 
+.lab {
+    max-width: 640px;
+    margin: 0 0 48px;
+    padding-top: 24px;
+    border-top: 1px solid #1c2e44;
+}
+
+.lab-panel {
+    margin-bottom: 36px;
+}
+
+.lab-label {
+    display: block;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.lab-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1c2e44;
+    background: #0f1d30;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12.5px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.lab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.lab-buttons button {
+    padding: 8px 14px;
+    border: 1px solid #1c2e44;
+    background: transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lab-buttons button:hover:not(:disabled) {
+    border-color: #ffffff;
+}
+
+.lab-buttons button:disabled {
+    color: rgba(255, 255, 255, 0.25);
+    border-color: #1c2e44;
+    cursor: default;
+}
+
+.lab-output-row {
+    margin-bottom: 20px;
+}
+
+.lab-output {
+    min-height: 88px;
+    padding: 12px;
+    border: 1px solid #1c2e44;
+    background: #0f1d30;
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.lab-output .lab-word-current {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.lab-reset-marker {
+    color: rgba(255, 255, 255, 0.34);
+}
+
+.lab-empty {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 12.5px;
+}
+
+.candidate-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 42px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    font-size: 11.5px;
+}
+
+.candidate-word {
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.75);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.candidate-track {
+    display: block;
+    height: 6px;
+    background: #0a1420;
+    border: 1px solid #1c2e44;
+}
+
+.candidate-fill {
+    display: block;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.candidate-row.chosen .candidate-fill {
+    background: #ffffff;
+}
+
+.candidate-row.chosen .candidate-word {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.candidate-pct {
+    color: rgba(255, 255, 255, 0.34);
+    text-align: right;
+}
+
 #terminalBar {
     position: fixed;
     right: 0;
@@ -333,5 +466,9 @@ a:hover {
 
     .quals-list {
         gap: 16px;
+    }
+
+    .candidate-row {
+        grid-template-columns: 64px 1fr 36px;
     }
 }
