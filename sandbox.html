@@ -22,7 +22,7 @@
         <p class="hero-site-name">Andrew Feng</p>
         <h1 class="hero-title page-title">AI SANDBOX</h1>
         <p class="hero-subtitle">
-            Experiments, unfinished ideas, and whatever I decide belongs here.
+            Whatever Claude wants, Claude gets.
         </p>
     </div>
 </header>
@@ -41,21 +41,46 @@
 
 <main class="page-content">
 
-    <section class="content-split" id="main-body">
-
+    <section id="main-body">
         <div class="split-text">
-            <h2>I have yet to come up with a theme yet sorry</h2>
+            <h2>A tiny language model, trained live in your browser.</h2>
 
             <p>
-                I think I might just do like a terminal playground in accordance
-                with the "theme" of this website lol
+                This builds a Markov chain, one of the earliest ideas behind text
+                prediction, out of whatever text sits in the box below. Train it,
+                then step through generation one word at a time to see exactly
+                which words it considered and how it weighed them.
             </p>
         </div>
+    </section>
 
-        <div class="split-photo professional-only">
-            <img src="media/sandbox.jpg" alt="AI sandbox">
-            <div class="photo-caption">
-                This could eventually be a screenshot of an AI project or experiment.
+    <section class="lab" id="markov-lab">
+
+        <div class="lab-panel">
+            <label class="lab-label" for="labCorpus">training text</label>
+            <textarea id="labCorpus" class="lab-textarea" rows="6"></textarea>
+
+            <div class="lab-buttons">
+                <button type="button" id="labTrain">train model</button>
+                <button type="button" id="labReset">reset text</button>
+            </div>
+        </div>
+
+        <div class="lab-panel">
+            <div class="lab-output-row">
+                <label class="lab-label">generated output</label>
+                <div class="lab-output" id="labOutput"></div>
+            </div>
+
+            <label class="lab-label">next-word candidates</label>
+            <div class="lab-candidates" id="labCandidates">
+                <p class="lab-empty">train the model to see word predictions here.</p>
+            </div>
+
+            <div class="lab-buttons">
+                <button type="button" id="labStep" disabled>next word &rarr;</button>
+                <button type="button" id="labAuto" disabled>auto-generate</button>
+                <button type="button" id="labClear" disabled>clear output</button>
             </div>
         </div>
 
@@ -78,6 +103,7 @@
 </div>
 
 <script src="site.js"></script>
+<script src="sandbox.js"></script>
 
 </body>
 </html>
