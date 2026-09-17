@@ -6,7 +6,13 @@
     <title>AI Sandbox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <link id="themeStylesheet" rel="stylesheet" href="stylesheet.css">
+    <script>
+        document.write(
+            '<link id="themeStylesheet" rel="stylesheet" href="' +
+            (sessionStorage.getItem("site-theme") === "terminal" ? "terminal.css" : "stylesheet.css") +
+            '">'
+        );
+    </script>
 </head>
 
 <body class="sandbox-page">
