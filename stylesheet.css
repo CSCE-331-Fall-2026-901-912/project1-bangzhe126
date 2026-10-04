@@ -242,7 +242,7 @@ a {
     grid-row: 1 / span 2;
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 10 / 10;
     border: 1px solid var(--rule);
     background: #ddd7cc;
     object-fit: cover;
