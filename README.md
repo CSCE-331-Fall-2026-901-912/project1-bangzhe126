@@ -9,9 +9,9 @@ The README file for Andrew Feng's personal website.
 - https://github.com/abzf0/StocksAIAgentEN
 - https://github.com/abzf0/ShippingServiceAIAgentCN
 - https://github.com/abzf0/eSportsGM_Java
-- https://github.com/eodavis23/howdyhack24
 ## Qualifications
 - https://www.linkedin.com/in/andr-feng/
+- https://drive.google.com/file/d/11yEbGrqlsdtPtfD3InU0f2xGxQGNXx_-/view?usp=sharing
 - https://www.github.com/abzf0
 - https://www.credly.com/users/andrew-b-feng
 ## Activities
